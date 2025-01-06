@@ -1,5 +1,6 @@
-import React from "react";
+import { useParams } from "react-router";
 import { PokemonData } from "./models";
+import { usePokemonData } from "./context";
 
 export const PokemonCard = ({ pokemonData }: { pokemonData: PokemonData }) => {
 	return (
@@ -20,18 +21,3 @@ export const PokemonCard = ({ pokemonData }: { pokemonData: PokemonData }) => {
 		</main>
 	);
 };
-
-export function Containder({ children }: { children: React.ReactNode }) {
-	return <article>{children}</article>;
-}
-
-export function Navbar() {
-	return (
-		<nav>
-			<form>
-				<input type="text" name="" id="pokemon" />
-				<button>search</button>
-			</form>
-		</nav>
-	);
-}

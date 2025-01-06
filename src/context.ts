@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { PokemonData } from "./models";
 import { getPokemonData } from "./adapter";
 
-export function usePokemonData(pokemonName: string) {
+export function usePokemonData(pokemonName = "0") {
 	const [pokemonData, setPokemonData] = useState(emptyPokemonData);
 	useEffect(() => {
 		getPokemonData(pokemonName).then((data) => setPokemonData(data));
