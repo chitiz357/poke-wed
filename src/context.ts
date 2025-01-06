@@ -3,7 +3,7 @@ import { PokemonData } from "./models";
 import { getPokemonData } from "./adapter";
 
 export function usePokemonData(pokemonName: string) {
-	const [pokemonData, setPokemonData] = useState<PokemonData>(emptyPokemonData);
+	const [pokemonData, setPokemonData] = useState(emptyPokemonData);
 	useEffect(() => {
 		getPokemonData(pokemonName).then((data) => setPokemonData(data));
 	}, []);
