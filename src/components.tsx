@@ -4,11 +4,11 @@ export const PokemonCard = ({ pokemonData }: { pokemonData: PokemonData }) => {
 	return (
 		<main>
 			<article>
+				<h2>{pokemonData.species.name}</h2>
 				<section>
 					<img src={pokemonData.sprites.front_default} alt="" />
 				</section>
 				<section>
-					<p>{pokemonData.species.name}</p>
 					<ul>
 						{pokemonData.types.map((type) => {
 							return <li>{type.type.name}</li>;
@@ -19,3 +19,5 @@ export const PokemonCard = ({ pokemonData }: { pokemonData: PokemonData }) => {
 		</main>
 	);
 };
+
+

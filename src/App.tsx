@@ -2,7 +2,7 @@ import { usePokemonData } from "./context";
 import { PokemonCard } from "./components";
 
 function App() {
-	const ditto = usePokemonData("ditto");
+	const ditto = usePokemonData("1");
 	const charizard = usePokemonData("charizard");
 	return (
 		<>
