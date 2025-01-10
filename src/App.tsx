@@ -1,4 +1,4 @@
-import { usePokemonData } from "./context";
+import { usePokemonData } from "./hooks";
 import { PokemonCard } from "./components";
 
 function App() {

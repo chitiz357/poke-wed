@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { usePokemonData } from "../context";
+import { usePokemonData } from "../hooks";
 
 export const PokemonPage = () => {
 	const { id } = useParams();

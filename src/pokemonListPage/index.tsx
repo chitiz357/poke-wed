@@ -1,7 +1,7 @@
 export function PokemonListPage() {
 	return (
 		<div>
-			<p>list</p>
+			<h1>list</h1>
 		</div>
 	);
 }
