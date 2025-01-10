@@ -2,7 +2,8 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import { HomePage } from "./homePage";
-import { Containder, Navbar } from "./components.tsx";
+import { Containder } from "./components/index.tsx";
+import { Navbar } from "./components/Navbar.tsx";
 import { PokemonPage } from "./pokemonPage";
 import { PokemonListPage } from "./pokemonListPage/index.tsx";
 
@@ -18,4 +19,3 @@ createRoot(document.getElementById("root")!).render(
 		</Containder>
 	</BrowserRouter>
 );
- 

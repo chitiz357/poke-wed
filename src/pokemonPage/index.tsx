@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { usePokemonData } from "../hooks";
 
 export const PokemonPage = () => {
@@ -19,6 +19,8 @@ export const PokemonPage = () => {
 					</ul>
 				</section>
 			</article>
+			<Link to={`/pokemon/${Number(id) - 1}`}>prev</Link>
+			<Link to={`/pokemon/${Number(id) + 1}`}>next</Link>
 		</main>
 	);
 };

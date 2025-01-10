@@ -1,5 +1,5 @@
 import React from "react";
-import { PokemonData } from "./models";
+import { PokemonData } from "../models";
 
 export const PokemonCard = ({ pokemonData }: { pokemonData: PokemonData }) => {
 	return (
@@ -23,15 +23,4 @@ export const PokemonCard = ({ pokemonData }: { pokemonData: PokemonData }) => {
 
 export function Containder({ children }: { children: React.ReactNode }) {
 	return <article>{children}</article>;
-}
-
-export function Navbar() {
-	return (
-		<nav>
-			<form>
-				<input type="text" name="" id="pokemon" />
-				<button>search</button>
-			</form>
-		</nav>
-	);
 }
