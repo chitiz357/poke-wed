@@ -71,3 +71,16 @@ button:focus-visible {
 		background-color: #f9f9f9;
 	}
 }
+
+.list-warper {
+	display: flex;
+	gap: 0.5rem;
+	flex-flow: row wrap;
+}
+
+.card {
+	border: 1px solid #000000;
+	background-color: #66666621;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { PokemonData } from "./models";
-import { getPokemonData } from "./adapter";
+import { getPokemonData } from "./services";
 
 export function usePokemonData(pokemonId = "0") {
 	const [pokemonData, setPokemonData] = useState(emptyPokemonData);
-
 	useEffect(() => {
 		getPokemonData(pokemonId).then((data) => setPokemonData(data));
 	}, [pokemonId]);
+
 	return pokemonData;
 }
 

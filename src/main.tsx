@@ -5,7 +5,7 @@ import { HomePage } from "./homePage";
 import { Containder } from "./components/index.tsx";
 import { Navbar } from "./components/Navbar.tsx";
 import { PokemonPage } from "./pokemonPage";
-import { PokemonListPage } from "./pokemonListPage/index.tsx";
+import { PokemonListPage } from "./pokemonListPage/page.pokemonList.tsx";
 
 createRoot(document.getElementById("root")!).render(
 	<BrowserRouter>
