@@ -13,8 +13,9 @@ export const PokemonPage = () => {
 				</section>
 				<section>
 					<ul>
-						{pokemonData.types.map((type) => {
-							return <li>{type.type.name}</li>;
+						{pokemonData.types.map
+						((type) => {
+							return <li className="type-card">{type.type.name}</li>;
 						})}
 					</ul>
 				</section>
